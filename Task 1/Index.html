@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weight Converter</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Custom JS -->
+    <script defer src="./script.js"></script>
+    <style> 
+      span { 
+          color: Green; 
+      } 
+  </style> 
+  </head>
+  <body>
+    <header>
+      <!-- Header code-->
+    </header>
+
+   
+      <main>
+        <div class="wrapper">
+          <h1 class="headline">Weight Converter</h1>
+          <!-- Users input -->
+          <form>
+            <input type="number" id="search" oninput="kiloweightConvert(this.value)"  placeholder="Enter kilograms..." />
+            <input type="submit" id="submit-btn" onchange="kiloweightConvert(this.value)" value="Reset" />
+          </form>
+          <!-- Place for output after form submission -->
+          <div class="grid-container">
+           <div><p>Svarai (lb): <span id="Pounds"></span></p></div> 
+           <div><p>Gramai (g): <span id="Grams"></span></p> </div> 
+           <div><p>Uncijos (oz): <span id="Ounces"></span></p></div> 
+           </div>
+      </main>
+    <!---------------------------------------------------------------------------->
+    <!-- Footer code -->
+     <footer>
+      <p>© By CodeAcademy</p>
+      </footer>
+  </body>
+</html>
